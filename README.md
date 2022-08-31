@@ -1,6 +1,7 @@
 # movieapp
 
 > [Build & Deploy a Movie App With NuxtJS | NuxtJS Crash Course (2021)](https://www.youtube.com/watch?v=IzLIXyZkKAA&t=486s)
+
 > Tutorial from John Komarnicki
 
 
