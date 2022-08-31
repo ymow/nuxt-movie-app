@@ -1,7 +1,7 @@
 <template>
   <Loading v-if="$fetchState.pending"/>
   <div v-else class="container single-movie">
-    <NuxtLink class="button" to="{ name: 'index'}">Back</NuxtLink>
+    <NuxtLink class="button" :to="{ name: 'index' }"> Back </NuxtLink>
     <div class="movie-info">
       <div class="movie-img">
         <img :src="`https://image.tmdb.org/t/p/w500/${movie.poster_path}`"
@@ -57,7 +57,7 @@ export default {
   methods: {
       async getSingleMovie() {
         const data = axios.get(
-          `https://api.themoviedb.org/3/movie/${this.$route.params.movieid}?api_key=514bc6441a146a5f05ccd3fb07456569&language=zh-TW`
+          `https://api.themoviedb.org/3/movie/${this.$route.params.id}?api_key=514bc6441a146a5f05ccd3fb07456569&language=zh-TW`
         )
         console.log(this.$nuxt._route.params)
         console.log(this.$nuxt._route.params.id)

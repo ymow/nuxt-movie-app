@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'Hero-session',
+  name: 'hero',
 }
 </script>
 

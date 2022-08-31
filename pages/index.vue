@@ -4,7 +4,7 @@
     <Hero />
     <!-- Search -->
     <div class="container search">
-      <input @keyup.enter="$fetch" v-model.lazy="searchInput" type="text" placeholder="Search" />
+      <input v-model.lazy="searchInput" @keyup.enter="$fetch" type="text" placeholder="Search" />
       <button @click="clearSearch" v-show="searchInput !== ''" class="button">Clear Search</button>
     </div>
     <!-- Loading -->
@@ -33,7 +33,7 @@
                 })
               }}
             </p>
-            <NuxtLink class="button button-light" :to="{name: 'movies-movieid', params: { movieid: movie.id } }">
+            <NuxtLink class="button button-light" :to="{name: 'movies-id', params: { id: movie.id } }">
               Get More Info
             </NuxtLink>
           </div>
@@ -60,7 +60,7 @@
                 })
               }}
             </p>
-            <NuxtLink class="button button-light" :to="{name: 'movies-movieid', params: { movieid: movie.id } }">
+            <NuxtLink class="button button-light" :to="{name: 'movies-id', params: { id: movie.id } }">
               Get More Info
             </NuxtLink>
           </div>
@@ -73,7 +73,7 @@
 <script>
 import axios from 'axios'
 export default {
-  name: 'HomePage',
+  name: 'home',
   head() {
     return {
       title: 'Movie App - Latest Streaming Movie Info',
