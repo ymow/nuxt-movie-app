@@ -2,8 +2,9 @@
 
 > [Build & Deploy a Movie App With NuxtJS | NuxtJS Crash Course (2021)](https://www.youtube.com/watch?v=IzLIXyZkKAA&t=486s)
 
-> Tutorial from John Komarnicki
+> This Repo is tutorial from John Komarnicki
 
+> [Demo](https://yt-movie-app.herokuapp.com/)
 
 ## Build Setup
 
